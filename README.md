@@ -1,5 +1,5 @@
 # BumbleBeer
-A website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.
+A website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.</br>
 Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "YouTube").</br></br></br>
 ![Banner.jpg](https://github.com/Fluctuationqt/BumbleBeer/blob/master/Banner.jpg "BumbleBeer")
 
