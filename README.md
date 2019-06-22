@@ -1,7 +1,7 @@
 # BumbleBeer
 A website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.</br></br>
 Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "YouTube").</br></br>
-![Alt](https://github.com/Fluctuationqt/BumbleBeer/blob/master/IMG_20190622_220516.jpg "BumbleBeer")
+![Banner.jpg](https://github.com/Fluctuationqt/BumbleBeer/blob/master/Banner.jpg "BumbleBeer")
 
 ## Contains
 1. [Firmware](https://github.com/Fluctuationqt/BumbleBeer/blob/master/Firmware/StamatNodeMCU2/StamatNodeMCU2.ino)- The NodeMCU microcontroller code for the *Arduino IDE*.
