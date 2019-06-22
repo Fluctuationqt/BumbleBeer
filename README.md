@@ -1,7 +1,7 @@
 # BumbleBeer
 A website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.
 Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "YouTube").
-
+![Alt](https://github.com/Fluctuationqt/BumbleBeer/blob/master/IMG_20190622_220516.jpg "BumbleBeer")
 
 ## Contains
 1. [Firmware](https://github.com/Fluctuationqt/BumbleBeer/blob/master/Firmware/StamatNodeMCU2/StamatNodeMCU2.ino)- The NodeMCU microcontroller code for the *Arduino IDE*.
@@ -17,4 +17,4 @@ Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "
 * The software: Apache/MySQL for the control website. It has a Unity WebGL app that sends out HTTP requests to the NodeMCU and visualizes the robot in 3D.  For the streaming i used a free software called YawCam it has an MJPEG streaming option and works flawlessly with low delay. The database holds a record of the robot's IP address in the Internal Network that gets set by the NodeMCU on startup.</br>
 
 ## PS
-*Contact me for more information. I'll be glad to help out.*
+*Contact [me](mailto:outrageousxqt@gmail.com "My Email") for more information. I'll be glad to help out.*
