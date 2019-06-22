@@ -1,0 +1,10 @@
+<linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="Controller">
+			<method name="Fire"/>
+			<method name="Move"/>
+			<method name="Right"/>
+			<method name="Left"/>
+		</type>
+	</assembly>
+</linker>

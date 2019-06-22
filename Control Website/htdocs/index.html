@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>BumbleBeer</title>
+    
+	<script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json");
+	  function gameLoadedHandler(){ 
+		document.getElementById('stream').style.display = 'block';
+		document.getElementById('infoBar').innerHTML = "Use the arrow keys or touch screen to control the robot.";
+		if(document.documentElement.clientWidth < 2*640){
+			document.getElementById('stream').style.marginTop = "400px";
+			document.getElementById('stream').style.marginLeft = "-100px";
+		}
+	  }
+    </script>
+	<style type="text/css">
+		body {
+			background-color: #231f20;
+		}
+		#stream {
+			display: none;
+			float: right;
+			margin-top: -480px;
+		}
+		#infoBar {
+			color: white;
+			margin-left: 450px;
+		}
+	</style>
+  </head>
+  <body>
+    <div class="webgl-content"> 
+		<div id="gameContainer" style="width: 640px; height: 480px"></div>
+    </div>
+	<img id="stream" src="http://192.168.137.1:8081/video.mjpg"/> <!--тук слагаш адреса на стриима ако си в локална мрежа ще е лаптопа който излъчва иначе localhost -->
+	<p id="infoBar"> Please Wait, Loading... </p>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+Initialize engine version: 5.4.3f1 (01f4c123905a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     1136 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.498 seconds
+Platform assembly: C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Ivo\Documents\StamatConnect\Build\StamatConnect_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.273553 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: f10 -> priority: 1 
+http://192.168.4.1/MoveTo?pitch=43?yaw=152
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=58?yaw=152
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=51?yaw=106
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=51?yaw=141
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=67?yaw=163
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=48?yaw=168
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=22?yaw=150
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=9?yaw=109
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+http://192.168.4.1/MoveTo?pitch=42?yaw=98
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
