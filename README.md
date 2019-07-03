@@ -33,6 +33,6 @@ The <b>Client Browser</b> When a user opens the static website it views the MJPE
 The use of a MySQL Databse is a complete overkill for storing a single record so i will move it to local storage on the Server.
 
 Here is a diagram on how it currently works:
-
+![diag](Schematics/diag.jpg "diagram")
 ## PS
 *Contact [me](mailto:outrageousxqt@gmail.com "My Email") for more information. I'll be glad to help out.*
