@@ -1,6 +1,8 @@
 # BumbleBeer
-This was a coding challange of mine that i presented as an IOT Project at Sofia University. </br>
-It is a website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.</br>
+This was a coding challange of mine that i presented as an IOT Project at Sofia University.</br>
+It is in no way a complete Project, it is a quick experiment on controlling a Robot from a public WebSite and an Android app. </br>
+
+The project implements a website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.</br>
 Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "YouTube").</br></br></br>
 ![Banner.jpg](https://github.com/Fluctuationqt/BumbleBeer/blob/master/Banner.jpg "BumbleBeer")
 
@@ -29,10 +31,22 @@ The <b>Robot</b> it implements:
 * HttpServer - handles the movement and fire requests.
 * Servo/Coil Gun/Cup Sensors - controllers for the servos and coil gun and cup sensors connected to the robot's microcontroller.
 
-The <b>Client Browser</b> When a user opens the static website it views the MJPEG stream inside an <IMG> tag and it starts a Unity WebGL app that obtains the robot's IP address and sends out HTTP Requests for movement and fire directly to the robot. In a future update i will make an interface layer on the webserver that redirects the Movement and Fire requests of clients that are coming from outside the WLAN so that the robot is fully hidden inside the local network and all the control requests pass through the WebServer on port 80/443;
+The <b>Client Browser</b> </br>
+When a user opens the static website it views the MJPEG stream inside an <IMG> tag and it starts a Unity WebGL app that obtains the robot's IP address and sends out HTTP Requests for movement and fire directly to the robot. In a future update i will make an interface layer on the webserver that redirects the Movement and Fire requests of clients that are coming from outside the WLAN so that the robot is fully hidden inside the local network and all the control requests pass through the WebServer on port 80/443;
 The use of a MySQL Databse is a complete overkill for storing a single record so i will move it to local storage on the Server.
 
 Here is a diagram on how it currently works:
 ![diag](Schematics/diag.jpg "diagram")
-## PS
-*Contact [me](mailto:outrageousxqt@gmail.com "My Email") for more information. I'll be glad to help out.*
+Robot and Server are in a WLAN that has open ports 80/443 directed to the Server.
+0. Server Starts 
+1. Robot Starts and connects to the Server's WLAN. When it obtains an IP by the DHCP server it sends the (1) HTTP Request that stores it's Local IP somewhere on the Server.
+2. Client joins the WLAN (Client can have public access and you can skip this step if you add 2 endpoints on the WebServer that redirect the Move/Fire requests to the robot so that there are no direct requests going from the Client to the Robot) and opens the Control Website.
+3. The image tag in the static page starts updating with the images from the MJPEG stream and the WebGL app requests the Robot IP (this is not necesarry if there are no direct requests sent out to the Robot)
+4. Based on the user's input movement and fire requests are sent out directly to the Robot
+</br>
+
+
+ ## PS
+* The WebGL app and stream can be reworked as a Unity Android app and the WebServer can be replaced with a native app that implements an HTTP Client/Server. Thus it would be easy to add a queue-ing mechanism for control.
+
+* Contact [me](mailto:outrageousxqt@gmail.com "My Email") for more information. I'll be glad to help out.*
