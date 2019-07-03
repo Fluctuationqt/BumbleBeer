@@ -49,5 +49,5 @@ Robot and Server are in a WLAN that has open ports 80/443 directed to the Server
  ## PS
 * The WebGL app and stream can be reworked as a Unity Android app and the WebServer can be replaced with a native app that implements an HTTP Client/Server. Thus it would be easy to add a queue-ing mechanism for control.
 This is how it should work:
-![diag2](Schematics/Untitled.jpg "Diag2")
+![diag2](Schematics/Untitled.jpg "diagram 2")
 * Contact [me](mailto:outrageousxqt@gmail.com "My Email") for more information. I'll be glad to help out.*
