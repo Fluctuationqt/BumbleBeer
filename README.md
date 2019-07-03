@@ -1,5 +1,6 @@
 # BumbleBeer
-A website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.</br>
+This was a coding challange of mine that i presented as an IOT Project at Sofia University. </br>
+It is a website that can control a physical beerpong robot that has 2 axis rotation, cup sensors and a coil gun.</br>
 Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "YouTube").</br></br></br>
 ![Banner.jpg](https://github.com/Fluctuationqt/BumbleBeer/blob/master/Banner.jpg "BumbleBeer")
 
@@ -15,6 +16,23 @@ Watch it in operation on [YouTube](https://www.youtube.com/watch?v=oYCZETZMVRY "
  * The gun: A bank of capacitors at 660V that discharge into a coil that is arround the barrel. Inside the coil there is an elongated metal piton with a rebound spring that gets pushed when the caps discharge into the coil. This in term shoots the ping pong ball from the barrel at aprox 3m max distance and 10cm min distance depending on how much you charge the caps. The cap charging circuit (the white box) has a 2 relays that charge the caps from 220V AC through a diode and discharge them into the coil. The relays are connected to the NodeMCU via optocouplers for galvanic separation from the AC line. </br>
 * The cup sensors are 3 pairs of an IR LED and an IR phototransistor that detect the reflection off of the ping pong balls when they go inside the cup.</br>
 * The software: Apache/MySQL for the control website. It has a Unity WebGL app that sends out HTTP requests to the NodeMCU and visualizes the robot in 3D.  For the streaming i used a free software called YawCam it has an MJPEG streaming option and works flawlessly with low delay. The database holds a record of the robot's IP address in the Internal Network that gets set by the NodeMCU on startup.</br>
+
+## Principle of Operation
+### The system has 3 entities
+The <b>Server</b> it hosts:
+* WLAN to which the Robot connects
+* MJPEG stream via YawCam and a connected USB WebCamera aimed at the Robot.
+* WebServer
+
+The <b>Robot</b> it implements:
+* HttpClient - sends our current local ip obtained by the WLAN's DHCP upon connection.
+* HttpServer - handles the movement and fire requests.
+* Servo/Coil Gun/Cup Sensors - controllers for the servos and coil gun and cup sensors connected to the robot's microcontroller.
+
+The <b>Client Browser</b> When a user opens the static website it views the MJPEG stream inside an <IMG> tag and it starts a Unity WebGL app that obtains the robot's IP address and sends out HTTP Requests for movement and fire directly to the robot. In a future update i will make an interface layer on the webserver that redirects the Movement and Fire requests of clients that are coming from outside the WLAN so that the robot is fully hidden inside the local network and all the control requests pass through the WebServer on port 80/443;
+The use of a MySQL Databse is a complete overkill for storing a single record so i will move it to local storage on the Server.
+
+Here is a diagram on how it currently works:
 
 ## PS
 *Contact [me](mailto:outrageousxqt@gmail.com "My Email") for more information. I'll be glad to help out.*
