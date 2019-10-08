@@ -32,7 +32,7 @@ The <b>Robot</b> it implements:
 * Servo/Coil Gun/Cup Sensors - controllers for the servos and coil gun and cup sensors connected to the robot's microcontroller.
 
 The <b>Client Browser</b> </br>
-When a user opens the static website it views the MJPEG stream inside an <IMG> tag and it starts a Unity WebGL app that obtains the robot's IP address and sends out HTTP Requests for movement and fire directly to the robot. In a future update i will make an interface layer on the webserver that redirects the Movement and Fire requests of clients that are coming from outside the WLAN so that the robot is fully hidden inside the local network and all the control requests pass through the WebServer on port 80/443;
+When a user opens the static website it views the MJPEG stream inside an IMG tag and it starts a Unity WebGL app that obtains the robot's IP address and sends out HTTP Requests for movement and fire directly to the robot. In a future update i will make an interface layer on the webserver that redirects the Movement and Fire requests of clients that are coming from outside the WLAN so that the robot is fully hidden inside the local network and all the control requests pass through the WebServer on port 80/443;
 The use of a MySQL Databse is a complete overkill for storing a single record so i will move it to local storage on the Server.
 
 Here is a diagram on how it currently works:
